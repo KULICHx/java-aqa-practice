@@ -2,3 +2,15 @@ LoginTest|PASSED|140
 CreateTaskTest|FAILED|890
 CommentTest|SKIPPED|0
 CreateTaskTest|PASSED|920
+SearchTest|FAILED|310
+ProfileTest|PASSED|200
+SearchTest|PASSED|290
+PaymentTest|FAILED|450
+AuditTest|SKIPPED|0
+BrokenStatusTest|PASED|100
+WrongDurationTest|PASSED|89o
+NegativeDurationTest|FAILED|-5
+MissingFieldTest|PASSED
+|PASSED|75
+ExtraFieldTest|PASSED|100|extra
+NoSeparatorsHere
