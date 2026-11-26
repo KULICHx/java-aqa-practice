@@ -16,5 +16,29 @@ public class Main {
 
         RunSummary summary = new RunSummary();
         summary.printSummary(run);
+
+        System.out.println();
+        test();
+
+    }
+
+    private static void test() {
+        var denSheet = new WorkSheet("Денис", List.of(
+                DayOfWeek.TUESDAY, DayOfWeek.THURSDAY, DayOfWeek.SUNDAY
+        ));
+
+        var benSheet = new WorkSheet("Бен", List.of(
+                DayOfWeek.MONDAY, DayOfWeek.WEDNESDAY, DayOfWeek.SATURDAY
+        ));
+
+        var lisSheet = new WorkSheet("Лиза", List.of(
+                DayOfWeek.THURSDAY, DayOfWeek.WEDNESDAY, DayOfWeek.FRIDAY
+        ));
+
+        var sheets = List.of(denSheet, benSheet, lisSheet);
+
+        ShiftSchedule shiftSchedule = new ShiftSchedule();
+        shiftSchedule.printSharedDays(sheets);
+
     }
 }
